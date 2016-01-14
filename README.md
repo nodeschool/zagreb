@@ -1,5 +1,5 @@
 # NodeSchool Zagreb
-![Node School Zagreb](zagreb.svg)
+![Node School Zagreb](./zagreb.svg)
 
 ## Team
 
