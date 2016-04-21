@@ -1,0 +1,83 @@
+.footer {
+  
+  .container {
+    margin-top: 13em;
+  }
+  
+  // Footer items
+  &__item {
+    @include span(6 of 12);
+    
+    &:last-of-type {
+      @include span(6 of 12 last);
+    }
+  }
+  
+  p {
+    color: $red;
+  }
+  
+  // Title
+  &__title {
+    font-family: 'Gotham';
+    font-size: 7.2rem;
+    color: $blue;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  // Issue info
+  &__issue-info {
+    font-size: 2.4rem;
+    
+    a {
+      color: $red;
+    }
+  }
+  
+  // Issue notice
+  &__issue-notice {
+    font-size: 1.4rem;
+  }
+  
+  // Sponsors intro
+  &__sponsors-intro {
+    font-family: 'Gotham';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 5rem 8rem;
+  }
+  
+  // Sponsor images container
+  &__sponsors {
+    margin-left: 8rem;
+    
+    // SPonsor images
+    img {
+      &:not(:first-of-type) {
+        margin-left: 4rem;
+      }
+    }
+  }
+  
+  // Bottom footer info
+  &__info {
+    @include clearfix();
+    padding: 8em 0;
+    
+    .copyright {
+      float: left;
+    }
+    
+    .credits {
+      float: right;
+    }
+    
+    // Copyright and credits text
+    span {
+      font-size: 1.4rem;
+      color: $blue;
+    }
+  }
+}

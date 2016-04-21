@@ -1,0 +1,11 @@
+{
+  "name": "nodeschool",
+  "private": true,
+  "dependencies": {
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
