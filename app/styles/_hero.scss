@@ -8,21 +8,21 @@
   height: 100vh;
   background: url('../images/background.png') no-repeat;
   background-size: cover;
-  
+
   // Content container
   &__content {
     text-align: center;
     width: 100%;
   }
-  
+
   // Hero button
   &__action {
     margin-top: 3.5em;
     max-width: 420px;
-   
+
    @include breakpoint(420px) {
       max-width: 80%;
-    }   
+    }
   }
 }
 
@@ -31,11 +31,11 @@
   font-size: 8rem;
   font-weight: 700;
   margin: 0;
-  
+  letter-spacing: 2px;
   @include breakpoint(620px) {
       font-size: 5rem;
   }
-  
+
     @include breakpoint(420px) {
       font-size: 3rem;
   }
@@ -46,11 +46,11 @@
   font-size: 3.2rem;
   font-weight: 700;
   margin: 0;
-  
+
   @include breakpoint(620px) {
       font-size: 2.2rem;
   }
-  
+
   @include breakpoint(420px) {
       font-size: 1.8rem;
   }
