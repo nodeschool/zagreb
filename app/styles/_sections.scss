@@ -2,28 +2,29 @@
   @include clearfix();
   color: $blue;
   padding: 15rem 0;
-  
-  // Section items 
+
+  // Section items
   .item-heading {
     @include span(8 of 12);
-        
+
     h1 {
       margin: 0;
     }
   }
-  
+
   .item-content {
+    padding-top:155px;
     @include span(4 of 12 last);
   }
-  
+
   // Big title section
   &__title {
     h1 {
       font-size: 15rem;
-      line-height: 1;  
+      line-height: 1;
     }
   }
-  
+
   // Content section
   &__content {
     @include clearfix();
@@ -35,12 +36,11 @@
       float: left;
       font-size: 2.6rem;
     }
-    
+
     // Border
     &:before {
       content: '';
       position: absolute;
-      top: 0;
       left: 0;
       width: 100%;
       height: 8px;
@@ -48,7 +48,7 @@
       z-index: 9999;
     }
   }
-  
+
   // Helpers
   &--bg-red {
     background-color: $red;
@@ -66,4 +66,3 @@
     color: #fff;
   }
 }
-
