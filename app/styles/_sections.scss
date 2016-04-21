@@ -1,0 +1,69 @@
+.section {
+  @include clearfix();
+  color: $blue;
+  padding: 15rem 0;
+  
+  // Section items 
+  .item-heading {
+    @include span(8 of 12);
+        
+    h1 {
+      margin: 0;
+    }
+  }
+  
+  .item-content {
+    @include span(4 of 12 last);
+  }
+  
+  // Big title section
+  &__title {
+    h1 {
+      font-size: 15rem;
+      line-height: 1;  
+    }
+  }
+  
+  // Content section
+  &__content {
+    @include clearfix();
+    position: relative;
+    float: right;
+
+    p {
+      max-width: 90%;
+      float: left;
+      font-size: 2.6rem;
+    }
+    
+    // Border
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: $red;
+      z-index: 9999;
+    }
+  }
+  
+  // Helpers
+  &--bg-red {
+    background-color: $red;
+    color: #fff;
+
+    .section__content {
+      &:before {
+        background-color: $blue;
+      }
+    }
+  }
+
+  &--bg-blue {
+    background-color: $blue;
+    color: #fff;
+  }
+}
+

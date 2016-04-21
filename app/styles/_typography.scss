@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Gotham";
+    font-weight: bold;
+    src: url("../fonts/GothamRnd-Bold.woff") format("woff"),
+         url("../fonts/GothamRnd-Bold.ttf") format("truetype"),
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px
+}
+
+body {
+  font-family: 'Gotham';
+  line-height: 1.5;
+}
+
+p, span {
+   font-family: 'Roboto', sans-serif;
+}
