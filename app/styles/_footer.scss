@@ -2,7 +2,7 @@
 
   .container {
     margin-top: 13em;
-    @media only screen and (max-width: 790px) {
+    @include breakpoint(790px) {
       margin-top:50px;
     }
   }
@@ -10,12 +10,12 @@
   // Footer items
   &__item {
     @include span(8 of 12);
-    @media only screen and (max-width: 790px) {
+    @include breakpoint(790px) {
       @include span(12 of 12);
     }
     &:last-of-type {
       @include span(4 of 12 last);
-      @media only screen and (max-width: 790px) {
+      @include breakpoint(790px) {
         @include span(12 of 12);
       }
     }
@@ -32,7 +32,7 @@
     color: $blue;
     margin: 0;
     line-height: 1;
-    @media only screen and (max-width: 790px) {
+    @include breakpoint(790px) {
       font-size: 44px;
     }
   }
@@ -60,8 +60,13 @@
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 40px;
-    @media only screen and (max-width: 790px) {
+    @include breakpoint(790px) {
       margin:20px 0;
+    }
+    @include breakpoint(500px) {
+      br{
+        display:none;
+      }
     }
   }
   &__sponsors {
@@ -72,6 +77,9 @@
       margin-right: 30px;
       height: 160px;
       width: 160px;
+      @include breakpoint(500px) {
+        width: 100%;
+      }
       &:nth-child(2n){
         margin: 0;
       }
@@ -79,6 +87,8 @@
         position:absolute;
         top:0;
         bottom:0;
+        left: 0;
+        right: 0;
         max-width: 160px;
         margin: auto;
       }
@@ -89,14 +99,19 @@
   &__info {
     @include clearfix();
     padding: 8em 0;
-
+    @include breakpoint(500px) {
+      padding: 30px 0;
+      .container{
+        margin:0;
+      }
+    }
     .copyright {
       float: left;
     }
 
     .credits {
       float: right;
-      @media only screen and (max-width: 790px) {
+      @include breakpoint(790px) {
         width: 100%;
         float:left;
       }

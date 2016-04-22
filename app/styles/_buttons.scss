@@ -11,13 +11,18 @@
   transition: background-color 0.2s ease-out;
   box-sizing: border-box;
   font-weight: 700;
-  
+  @include breakpoint(420px) {
+    padding: 1em 0;
+  }
    > span {
     font-size: 1.8rem;
     display: block;
     color: $blue-light;
+    @include breakpoint(420px) {
+      font-size: 1.5rem;
+    }
   }
-  
+
   &:hover {
     background-color: darken($blue, 10%);
   }
