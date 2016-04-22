@@ -2,11 +2,18 @@
   @include clearfix();
   color: $blue;
   padding: 15rem 0;
-
+  @media only screen and (max-width: 790px) {
+    padding: 50px 0;
+  }
   // Section items
   .item-heading {
     @include span(8 of 12);
-
+    @media only screen and (max-width: 790px) {
+      @include span(12 of 12 first);
+      h1{
+        font-size:72px;
+      }
+    }
     h1 {
       margin: 0;
     }
@@ -15,6 +22,14 @@
   .item-content {
     padding-top:155px;
     @include span(4 of 12 last);
+    @media only screen and (max-width: 790px) {
+      padding-top:50px;
+      @include span(12 of 12 first);
+      p{
+        font-size:21px;
+        line-height: 31px;
+      }
+    }
   }
 
   // Big title section

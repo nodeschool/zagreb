@@ -1,22 +1,30 @@
 .footer {
-  
+
   .container {
     margin-top: 13em;
-  }
-  
-  // Footer items
-  &__item {
-    @include span(6 of 12);
-    
-    &:last-of-type {
-      @include span(6 of 12 last);
+    @media only screen and (max-width: 790px) {
+      margin-top:50px;
     }
   }
-  
+
+  // Footer items
+  &__item {
+    @include span(8 of 12);
+    @media only screen and (max-width: 790px) {
+      @include span(12 of 12);
+    }
+    &:last-of-type {
+      @include span(4 of 12 last);
+      @media only screen and (max-width: 790px) {
+        @include span(12 of 12);
+      }
+    }
+  }
+
   p {
     color: $red;
   }
-  
+
   // Title
   &__title {
     font-family: 'Gotham';
@@ -24,56 +32,76 @@
     color: $blue;
     margin: 0;
     line-height: 1;
+    @media only screen and (max-width: 790px) {
+      font-size: 44px;
+    }
   }
-  
+
   // Issue info
   &__issue-info {
     font-size: 2.4rem;
-    
+    padding-right: 40px;
     a {
       color: $red;
     }
   }
-  
+
   // Issue notice
   &__issue-notice {
     font-size: 1.4rem;
+    padding-right: 40px;
+
   }
-  
+
   // Sponsors intro
   &__sponsors-intro {
     font-family: 'Gotham';
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0 0 5rem 8rem;
+    margin-bottom: 40px;
+    @media only screen and (max-width: 790px) {
+      margin:20px 0;
+    }
   }
-  
-  // Sponsor images container
   &__sponsors {
-    margin-left: 8rem;
-    
-    // SPonsor images
-    img {
-      &:not(:first-of-type) {
-        margin-left: 4rem;
+    a{
+      position:relative;
+      float:left;
+      display:block;
+      margin-right: 30px;
+      height: 160px;
+      width: 160px;
+      &:nth-child(2n){
+        margin: 0;
+      }
+      img{
+        position:absolute;
+        top:0;
+        bottom:0;
+        max-width: 160px;
+        margin: auto;
       }
     }
   }
-  
+
   // Bottom footer info
   &__info {
     @include clearfix();
     padding: 8em 0;
-    
+
     .copyright {
       float: left;
     }
-    
+
     .credits {
       float: right;
+      @media only screen and (max-width: 790px) {
+        width: 100%;
+        float:left;
+      }
     }
-    
+
     // Copyright and credits text
     span {
       font-size: 1.4rem;
