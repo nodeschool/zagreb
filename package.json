@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dist": "gulp build"
+    "dist": "gulp build",
+    "start": "gulp serve"
   },
   "engines": {
     "node": ">=0.12.0"
