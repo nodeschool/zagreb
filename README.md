@@ -21,7 +21,7 @@ Check out the [NodeSchoolZagreb website](http://nodeschool.io/zagreb/) and RSVP 
 Become a better teacher or simply contribute back to open source. You know the drill.
 
 - Dino Trojak, [@dinodsaurus](https://twitter.com/dinodsaurus)
-- Hrvoje Šimić, [@shimetweets](https://twitter.com/shimetweets)
+- Hrvoje Šimić, [@shimewastaken](https://twitter.com/shimewastaken)
 - Luka Blažecki, [@LukaBlazecki](https://twitter.com/LukaBlazecki)
 - Matija Marohnić, [@silvenon](https://twitter.com/silvenon)
 - _Add your name here with a [pull request](https://github.com/nodeschool/zagreb/pulls)_
